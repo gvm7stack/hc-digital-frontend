@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página de ajuda do sistema Front Access do Hospital das Clínicas" />
+  <title>Ajuda - Hospital das Clínicas</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app"  );
+</script>
+
+<header>
+  <div class="header-container">
+    <a href="../index.html" aria-label="Página Inicial">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-header">
+    </a>
+    
+    <div class="hamburger-menu" aria-label="Menu de navegação" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="ajuda.html" class="active" aria-current="page">Ajuda</a></li>
+        <li><a href="dicas.html">Dicas</a></li>
+        <li><a href="iniciar.html">Iniciar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="solucao.html">Solução</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="content-box">
+    <div class="logo-container">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-hc">
+    </div>
+
+    <h1>Central de Ajuda</h1>
+    
+    <p class="centered-text">Estamos aqui para ajudar você a utilizar todos os recursos do sistema Front Access do Hospital das Clínicas.</p>
+
+    <section>
+      <h2><i class="fas fa-question-circle" aria-hidden="true"></i> Como podemos ajudar?</h2>
+      
+      <div class="cards-container">
+        <article class="card">
+          <i class="fas fa-laptop card-icon" aria-hidden="true"></i>
+          <h3>Navegação no Site</h3>
+          <p>Aprenda a navegar pelo site e encontrar as informações que você precisa de forma rápida e fácil.</p>
+          <a href="#navegacao" class="btn btn-secondary">Saiba mais</a>
+        </article>
+        
+        <article class="card">
+          <i class="fas fa-universal-access card-icon" aria-hidden="true"></i>
+          <h3>Recursos de Acessibilidade</h3>
+          <p>Conheça os recursos de acessibilidade disponíveis para melhorar sua experiência.</p>
+          <a href="#acessibilidade-recursos" class="btn btn-secondary">Saiba mais</a>
+        </article>
+        
+        <article class="card">
+          <i class="fas fa-mobile-alt card-icon" aria-hidden="true"></i>
+          <h3>Uso em Dispositivos Móveis</h3>
+          <p>Dicas para utilizar o sistema em smartphones e tablets de forma eficiente.</p>
+          <a href="#mobile" class="btn btn-secondary">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="navegacao">
+      <h2>Navegação no Site</h2>
+      <p>O site do Hospital das Clínicas foi projetado para ser intuitivo e fácil de usar. Aqui estão algumas dicas para ajudá-lo a navegar:</p>
+      
+      <ul>
+        <li>Utilize o <strong>menu de navegação</strong> no topo da página para acessar as diferentes seções do site.</li>
+        <li>A <strong>página inicial</strong> contém informações gerais e acesso rápido aos serviços mais utilizados.</li>
+        <li>Use os <strong>botões de navegação</strong> (Anterior/Próximo) para percorrer as páginas em sequência.</li>
+        <li>Caso tenha dúvidas específicas, consulte a seção de <strong>Perguntas Frequentes (FAQ)</strong>.</li>
+        <li>Para entrar em contato conosco, utilize a página de <strong>Contato</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="acessibilidade-recursos">
+      <h2>Recursos de Acessibilidade</h2>
+      <p>Nosso site oferece diversos recursos para tornar a navegação acessível a todos os usuários:</p>
+      
+      <ul>
+        <li><strong>Aumento e diminuição de fonte</strong>: Ajuste o tamanho do texto para melhor leitura.</li>
+        <li><strong>Modo de alto contraste</strong>: Alterne para um modo de visualização com maior contraste entre texto e fundo.</li>
+        <li><strong>Navegação por teclado</strong>: Todas as funcionalidades podem ser acessadas utilizando apenas o teclado.</li>
+        <li><strong>Textos alternativos</strong>: Todas as imagens possuem descrições para leitores de tela.</li>
+        <li><strong>Estrutura semântica</strong>: O site foi construído seguindo padrões de acessibilidade web.</li>
+      </ul>
+    </section>
+
+    <section id="mobile">
+      <h2>Uso em Dispositivos Móveis</h2>
+      <p>O site do Hospital das Clínicas é totalmente responsivo e pode ser acessado em qualquer dispositivo. Dicas para uso em dispositivos móveis:</p>
+      
+      <ul>
+        <li>No modo móvel, o menu de navegação se transforma em um <strong>menu hambúrguer</strong> (três linhas horizontais) no canto superior direito.</li>
+        <li>Toque no ícone do menu para expandir as opções de navegação.</li>
+        <li>Utilize os gestos de <strong>pinça</strong> para aumentar ou diminuir o zoom da página.</li>
+        <li>Gire o dispositivo para o modo <strong>paisagem</strong> para visualizar tabelas e conteúdos mais amplos.</li>
+        <li>Os formulários são otimizados para entrada de dados em telas sensíveis ao toque.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Precisa de mais ajuda?</h2>
+      <p class="centered-text">Se você não encontrou a informação que procura, entre em contato com nossa equipe de suporte:</p>
+      
+      <div class="btn-container">
+        <a href="contato.html" class="btn">Contato</a>
+        <a href="faq.html" class="btn btn-secondary">Perguntas Frequentes</a>
+      </div>
+    </section>
+
+    <div class="navigation-buttons">
+      <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Próximo</button>
+    </div>
+  </section>
+</main>
+
+<section class="acessibilidade">
+  <h3>Acessibilidade</h3>
+  <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+    <i class="fas fa-search-plus" aria-hidden="true"></i> Aumentar Fonte
+  </button>
+  <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+    <i class="fas fa-search-minus" aria-hidden="true"></i> Diminuir Fonte
+  </button>
+  <button onclick="alternarContraste()" aria-label="Alternar modo de alto contraste">
+    <i class="fas fa-adjust" aria-hidden="true"></i> Alto Contraste
+  </button>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="footer-logo">
+    
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="contato.html">Contato</a>
+      <a href="faq.html">Perguntas Frequentes</a>
+      <a href="integrantes.html">Integrantes</a>
+    </div>
+    
+    <p>© 2025 Hospital das Clínicas da Faculdade de Medicina da USP - Todos os direitos reservados</p>
+    <p>Desenvolvido por Team EGG SOLUTION</p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

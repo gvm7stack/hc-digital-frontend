@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Entre em contato com o Hospital das Clínicas para suporte e informações" />
+  <title>Contato - Hospital das Clínicas</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget("https://vlibras.gov.br/app"  );
+</script>
+
+
+<header>
+  <div class="header-container">
+    <a href="../index.html" aria-label="Página Inicial">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-header">
+    </a>
+    
+    <div class="hamburger-menu" aria-label="Menu de navegação" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="dicas.html">Dicas</a></li>
+        <li><a href="iniciar.html">Iniciar</a></li>
+        <li><a href="contato.html" class="active" aria-current="page">Contato</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="solucao.html">Solução</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="content-box">
+    <div class="logo-container">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-hc">
+    </div>
+
+    <h1>Entre em Contato</h1>
+    
+    <p class="centered-text">Estamos à disposição para ajudar. Preencha o formulário abaixo ou utilize um de nossos canais de atendimento.</p>
+
+    <section class="cards-container">
+      <article class="card">
+        <i class="fas fa-phone-alt card-icon" aria-hidden="true"></i>
+        <h3>Telefones</h3>
+        <p><strong>Central de Atendimento:</strong><br>(11) 2661-0000</p>
+        <p><strong>Agendamento:</strong><br>(11) 2661-8500</p>
+        <p><strong>Suporte Digital:</strong><br>(11) 2661-7000</p>
+      </article>
+      
+      <article class="card">
+        <i class="fas fa-envelope card-icon" aria-hidden="true"></i>
+        <h3>E-mail</h3>
+        <p><strong>Informações Gerais:</strong><br><a href="mailto:atendimento@hc.fm.usp.br">atendimento@hc.fm.usp.br</a></p>
+        <p><strong>Suporte Técnico:</strong><br><a href="mailto:suporte@hc.fm.usp.br">suporte@hc.fm.usp.br</a></p>
+        <p><strong>Ouvidoria:</strong><br><a href="mailto:ouvidoria@hc.fm.usp.br">ouvidoria@hc.fm.usp.br</a></p>
+      </article>
+      
+      <article class="card">
+        <i class="fas fa-map-marker-alt card-icon" aria-hidden="true"></i>
+        <h3>Endereço</h3>
+        <p><strong>Hospital das Clínicas da FMUSP</strong></p>
+        <p>Av. Dr. Enéas Carvalho de Aguiar, 255<br>Cerqueira César<br>São Paulo - SP<br>CEP: 05403-000</p>
+        <a href="https://maps.app.goo.gl/W1EBGqMGLbU6PziQ6" target="_blank" class="btn btn-secondary">Ver no Mapa</a>
+      </article>
+    </section>
+
+    <section class="contact-form">
+      <h2>Formulário de Contato</h2>
+      <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+      
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome Completo:</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required aria-required="true">
+          <span id="nameError" class="error-message">Por favor, informe seu nome.</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required aria-required="true">
+          <span id="emailError" class="error-message">Por favor, informe um e-mail válido.</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(XX ) XXXXX-XXXX">
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Assunto:</label>
+          <select id="subject" name="subject" required aria-required="true">
+            <option value="">Selecione um assunto</option>
+            <option value="duvida">Dúvidas sobre serviços</option>
+            <option value="agendamento">Agendamento de consultas</option>
+            <option value="suporte">Suporte técnico</option>
+            <option value="elogio">Elogios</option>
+            <option value="reclamacao">Reclamações</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+          <span id="subjectError" class="error-message">Por favor, selecione um assunto.</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Digite sua mensagem" required aria-required="true"></textarea>
+          <span id="messageError" class="error-message">Por favor, escreva sua mensagem.</span>
+        </div>
+        
+        <div class="form-group">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <input type="checkbox" id="privacy" name="privacy" style="width: auto; margin-right: 10px;" required aria-required="true">
+            <label for="privacy" style="margin-bottom: 0;">Concordo com a <a href="#">Política de Privacidade</a></label>
+          </div>
+          <span id="privacyError" class="error-message">Você precisa concordar com a política de privacidade.</span>
+        </div>
+        
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Horários de Atendimento</h2>
+      <p><strong>Central de Atendimento:</strong> Segunda a sexta-feira, das 7h às 19h</p>
+      <p><strong>Suporte Digital:</strong> 24 horas por dia, 7 dias por semana</p>
+      <p><strong>Ambulatórios:</strong> Segunda a sexta-feira, das 7h às 18h</p>
+    <p><strong>Pronto Socorro:</strong> Aberto 24 horas por dia</p>
+    </section>
+
+    <div class="navigation-buttons">
+      <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Próximo</button>
+    </div>
+  </section>
+</main>
+
+<section class="acessibilidade">
+  <h3>Acessibilidade</h3>
+  <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+    <i class="fas fa-search-plus" aria-hidden="true"></i> Aumentar Fonte
+  </button>
+  <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+    <i class="fas fa-search-minus" aria-hidden="true"></i> Diminuir Fonte
+  </button>
+  <button onclick="alternarContraste()" aria-label="Alternar modo de alto contraste">
+    <i class="fas fa-adjust" aria-hidden="true"></i> Alto Contraste
+  </button>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="footer-logo">
+    
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="contato.html">Contato</a>
+      <a href="faq.html">Perguntas Frequentes</a>
+      <a href="integrantes.html">Integrantes</a>
+    </div>
+    
+    <p>© 2025 Hospital das Clínicas da Faculdade de Medicina da USP - Todos os direitos reservados</p>
+    <p>Desenvolvido por Team EGG SOLUTION</p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

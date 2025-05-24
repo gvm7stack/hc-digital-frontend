@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Front Access - Sistema para facilitar o acesso digital do Hospital das Clínicas" />
+  <title>Hospital das Clínicas - Front Access</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app'  );
+</script>
+
+<header>
+  <div class="header-container">
+    <a href="index.html" aria-label="Página Inicial">
+      <img src="assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-header">
+    </a>
+    
+    <div class="hamburger-menu" aria-label="Menu de navegação" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="pages/ajuda.html">Ajuda</a></li>
+        <li><a href="pages/dicas.html">Dicas</a></li>
+        <li><a href="pages/iniciar.html">Iniciar</a></li>
+        <li><a href="pages/contato.html">Contato</a></li>
+        <li><a href="pages/faq.html">FAQ</a></li>
+        <li><a href="pages/integrantes.html">Integrantes</a></li>
+        <li><a href="pages/solucao.html">Solução</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="content-box">
+    <div class="hero-section">
+      <div class="logo-container">
+        <img src="assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-hc">
+      </div>
+
+      <h1>Bem-vindo ao Front Access</h1>
+      <p class="centered-text">Sistema desenvolvido para facilitar o acesso digital aos serviços do Hospital das Clínicas da Faculdade de Medicina da USP, o maior complexo hospitalar da América Latina.</p>
+      
+      <div class="btn-container">
+        <a href="pages/iniciar.html" class="btn">Começar Agora</a>
+        <a href="pages/ajuda.html" class="btn btn-secondary">Preciso de Ajuda</a>
+      </div>
+    </div>
+
+    <section class="cards-container">
+      <article class="card">
+        <i class="fas fa-calendar-check card-icon" aria-hidden="true"></i>
+        <h3>Agendamentos</h3>
+        <p>Agende consultas e exames de forma simples e rápida, sem complicações.</p>
+      </article>
+      
+      <article class="card">
+        <i class="fas fa-file-medical card-icon" aria-hidden="true"></i>
+        <h3>Resultados</h3>
+        <p>Acesse seus resultados de exames e histórico médico com segurança.</p>
+      </article>
+      
+      <article class="card">
+        <i class="fas fa-user-md card-icon" aria-hidden="true"></i>
+        <h3>Telemedicina</h3>
+        <p>Consultas online com especialistas sem sair de casa.</p>
+      </article>
+    </section>
+
+    <section>
+  <h2>Conheça o Hospital das Clínicas</h2>
+  <div class="image-gallery">
+    <div class="gallery-item">
+      <img src="assets/images/hc-entrada-principal.jpeg" alt="Fachada do Hospital das Clínicas">
+      <p>Entrada principal do HC-FMUSP</p>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/hc-fachada-2.jpeg" alt="Fachada do Instituto Central do Hospital das Clínicas">
+      <p>Instituto Central do HC-FMUSP</p>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/hc-corredor-interno (1).jpeg" alt="Corredor interno do Hospital das Clínicas">
+      <p>Ambiente interno - Corredor hospitalar</p>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/hc-recepcao.webp" alt="Recepção do Hospital das Clínicas">
+      <p>Área de recepção e atendimento</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <section>
+      <h2>Sobre o Hospital das Clínicas</h2>
+      <p>O Hospital das Clínicas da Faculdade de Medicina da USP é referência nacional em atendimento, ensino e pesquisa em saúde. Fundado em 1944, possui mais de 2.400 leitos e 8 institutos especializados, como o Instituto do Coração (InCor), Instituto de Psiquiatria (IPq), Instituto da Criança (ICr) e Instituto de Radiologia (InRad).</p>
+      
+      <p>Nossa missão é oferecer excelência em saúde, aliando tecnologia de ponta e atendimento humanizado. O Front Access é parte da nossa iniciativa de transformação digital, tornando nossos serviços mais acessíveis a todos os pacientes.</p>
+    </section>
+
+    <div class="navigation-buttons">
+      <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Próximo</button>
+    </div>
+  </section>
+</main>
+
+<section class="acessibilidade">
+  <h3>Acessibilidade</h3>
+  <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+    <i class="fas fa-search-plus" aria-hidden="true"></i> Aumentar Fonte
+  </button>
+  <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+    <i class="fas fa-search-minus" aria-hidden="true"></i> Diminuir Fonte
+  </button>
+  <button onclick="alternarContraste()" aria-label="Alternar modo de alto contraste">
+    <i class="fas fa-adjust" aria-hidden="true"></i> Alto Contraste
+  </button>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <img src="assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="footer-logo">
+    
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="pages/contato.html">Contato</a>
+      <a href="pages/faq.html">Perguntas Frequentes</a>
+      <a href="pages/integrantes.html">Integrantes</a>
+    </div>
+    
+    <p>© 2025 Hospital das Clínicas da Faculdade de Medicina da USP - Todos os direitos reservados</p>
+    <p>Desenvolvido por Team EGG SOLUTION</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

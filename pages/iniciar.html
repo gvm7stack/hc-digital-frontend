@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página de login do sistema Front Access do Hospital das Clínicas" />
+  <title>Iniciar Sessão - Hospital das Clínicas</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app'  );
+</script>
+
+<header>
+  <div class="header-container">
+    <a href="../index.html" aria-label="Página Inicial">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-header">
+    </a>
+    
+    <div class="hamburger-menu" aria-label="Menu de navegação" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="dicas.html">Dicas</a></li>
+        <li><a href="iniciar.html" class="active" aria-current="page">Iniciar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="solucao.html">Solução</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="content-box">
+   
+    <div class="logo-container">
+      <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="logo-hc">
+    </div>
+
+    <h1>Acesso ao Sistema</h1>
+    
+    <p class="centered-text">Faça login para acessar os serviços digitais do Hospital das Clínicas.</p>
+
+    <section class="contact-form">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="usuario"><i class="fas fa-user" aria-hidden="true"></i> Usuário ou CPF:</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário ou CPF" required aria-required="true">
+          <span id="usuarioError" class="error-message">Por favor, informe seu usuário ou CPF.</span>
+        </div>
+        
+        <div class="form-group">
+          <label for="senha"><i class="fas fa-lock" aria-hidden="true"></i> Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required aria-required="true">
+          <span id="senhaError" class="error-message">Por favor, informe sua senha.</span>
+        </div>
+        
+        <div class="form-group">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <input type="checkbox" id="lembrar" name="lembrar" style="width: auto; margin-right: 10px;">
+            <label for="lembrar" style="margin-bottom: 0;">Lembrar meus dados</label>
+          </div>
+        </div>
+        
+        <div class="btn-container">
+          <button type="submit" class="btn">Entrar</button>
+          <a href="#" class="btn btn-secondary">Esqueci minha senha</a>
+        </div>
+      </form>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h2>Primeiro acesso?</h2>
+      <p class="centered-text">Se você ainda não possui cadastro, crie sua conta para acessar os serviços digitais do Hospital das Clínicas.</p>
+      
+      <div class="btn-container">
+        <a href="#" class="btn">Criar Conta</a>
+      </div>
+      
+      <div style="margin-top: 30px;">
+        <h3>Outras formas de acesso</h3>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+          <button class="btn" style="display: flex; align-items: center;">
+            <i class="fas fa-id-card" style="margin-right: 10px;" aria-hidden="true"></i> Acessar com Gov.br
+          </button>
+          <button class="btn" style="display: flex; align-items: center;">
+            <i class="fas fa-qrcode" style="margin-right: 10px;" aria-hidden="true"></i> Acessar com QR Code
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 40px;">
+      <h2>Precisa de ajuda?</h2>
+      <p class="centered-text">Se você está com dificuldades para acessar sua conta, consulte nossas páginas de suporte:</p>
+      
+      <div class="btn-container">
+        <a href="ajuda.html" class="btn">Central de Ajuda</a>
+        <a href="faq.html" class="btn btn-secondary">Perguntas Frequentes</a>
+      </div>
+    </section>
+
+    
+    <div class="navigation-buttons">
+      <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Próximo</button>
+    </div>
+  </section>
+</main>
+
+<section class="acessibilidade">
+  <h3>Acessibilidade</h3>
+  <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+    <i class="fas fa-search-plus" aria-hidden="true"></i> Aumentar Fonte
+  </button>
+  <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+    <i class="fas fa-search-minus" aria-hidden="true"></i> Diminuir Fonte
+  </button>
+  <button onclick="alternarContraste()" aria-label="Alternar modo de alto contraste">
+    <i class="fas fa-adjust" aria-hidden="true"></i> Alto Contraste
+  </button>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <img src="../assets/images/logoHC.png" alt="Logo Hospital das Clínicas" class="footer-logo">
+    
+    <div class="footer-links">
+      <a href="../index.html">Home</a>
+      <a href="contato.html">Contato</a>
+      <a href="faq.html">Perguntas Frequentes</a>
+      <a href="integrantes.html">Integrantes</a>
+    </div>
+    
+    <p>© 2025 Hospital das Clínicas da Faculdade de Medicina da USP - Todos os direitos reservados</p>
+    <p>Desenvolvido por Team EGG SOLUTION</p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById('loginForm');
+    
+    if (loginForm) {
+      loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let isValid = true;
+        
+        
+        const usuarioInput = document.getElementById('usuario');
+        const usuarioError = document.getElementById('usuarioError');
+        if (!usuarioInput.value.trim()) {
+          usuarioError.style.display = 'block';
+          isValid = false;
+        } else {
+          usuarioError.style.display = 'none';
+        }
+        
+       
+        const senhaInput = document.getElementById('senha');
+        const senhaError = document.getElementById('senhaError');
+        if (!senhaInput.value.trim()) {
+          senhaError.style.display = 'block';
+          isValid = false;
+        } else {
+          senhaError.style.display = 'none';
+        }
+        
+        if (isValid) {
+          
+          alert('Login realizado com sucesso! Redirecionando para a área do paciente...');
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
